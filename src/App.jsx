@@ -54,7 +54,11 @@ function AppContent() {
   
   // Funciones para manejar el contador
   const incrementar = () => setContador(contador + 1);
+    const incrementarmas5 = () => setContador(contador + 5);
+
   const decrementar = () => setContador(contador - 1);
+    const decrementarmenos5 = () => setContador(contador - 5);
+
   const resetear = () => setContador(0);
   
   return (
@@ -73,8 +77,14 @@ function AppContent() {
           <button className="button" onClick={incrementar}>
             ➕ Incrementar
           </button>
+          <button className="button" onClick={incrementarmas5}>
+            ➕ Incrementar mas 5
+          </button>
           <button className="button" onClick={decrementar}>
             ➖ Decrementar
+          </button>
+          <button className="button" onClick={decrementarmenos5}>
+            ➖ Decrementar menos 5
           </button>
           <button className="button danger" onClick={resetear}>
             🔄 Resetear
